@@ -1,0 +1,26 @@
+﻿@model MadForInputsREVAMPED.Models.Madlib
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form method="post" asp-controller="Home" asp-action="DisplayMadlib">    
+    <div class="text-center">
+        <h1 class="display-4">Create a Story</h1>
+        <div>Name</div>
+        <input id="NameBox" name="NameBox" type="text" value="" />
+    
+        <div>Location</div>
+        <input id="LocationBox" name="LocationBox" type="text" value="" />
+    
+        <div>Verb</div>
+        <input id="VerbBox" name="VerbBox" type="text" value="" />
+    
+        <div>Adverb</div>
+        <input id="AdverbBox" name="AdverbBox" type="text" value="" />
+    
+        <div>Adjective</div>
+        <input id="AdjectiveBox" name="AdjectiveBox" type="text" value="" />
+        
+        <div></div>
+        <input id="SubmitBtn" name="SubmitBtn" type="submit" value="Submit" />
+    </div>
+</form>

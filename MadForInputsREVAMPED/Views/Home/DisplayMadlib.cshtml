@@ -1,0 +1,14 @@
+﻿@model Madlib
+@{
+    ViewData["Title"] = $"Trouble in {Model.Location}";
+}
+<h1>@ViewData["Title"]</h1>
+<div>
+I was today years old when I met <b>@Model.Name</b> at the <b>@Model.Location</b>. It was a <b>@Model.Adjective</b> summer's afternoon, and I just got back from a <b>@Model.Verb</b> class session where I <b>@Model.Verb @Model.Adverb</b> over and 
+ over for 2 hours. Suddenly, an old man stops me and introduces himself as <b>@Model.Name</b>. He said he had a special item to help me when I <b>@Model.Verb</b>.
+  Immediately, I took the item and started <b>@Model.Verb</b>ing. I shouted "Sir, I need an antidote. I can't stop <b>@Model.Verb</b>ing!" But <b>@Model.Name</b>
+  rubbed his hands and laughed sinisterly. "No, KEEP <b>@Model.Adjective</b>ing!" Crying, I beg "Please..." But the man wouldn't make it stop and kept shouting
+  "More. MORE!!!" An hour later, <b>@Model.Name</b> got bored and left me there at <b>@Model.Location</b>. I still <b>@Model.Verb</b> to this day...
+</div>
+
+<div><a asp-controller="Home" asp-action="Index">Back to the Form</a></div>
