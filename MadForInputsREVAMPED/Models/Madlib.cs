@@ -1,25 +1,37 @@
-﻿namespace MadForInputsREVAMPED.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MadForInputsREVAMPED.Models
 {
     public class Madlib
     {
-        public string Name { get; set; } = "Seth";
-        public string Location { get; set; } = "Place";
-        public string Verb { get; set; } = "Vomit";
-        public string Adverb { get; set; } = "freely";
-        public string Adjective { get; set; } = "deadly";
+        [Column(TypeName = "varchar(500)")]
+        public string Title { get; set; }
+
+        [Required]
+        public string AuthorId { get; set; }
+
+        [Required]
+        public string Story { get; set; }
+
+        [Required]
+        public DateTime DatePublish { get; set; }
+
+        [Required]
+        public string Genre { get; set; }
 
         public Madlib()
         {
 
         }
 
-        public Madlib(string name, string location, string verb, string adverb, string adjective)
+        public Madlib(string title, string authorId, string story, DateTime datePublish, string genre)
         {
-            this.Name = name;
-            this.Location = location;
-            this.Verb = verb;
-            this.Adverb = adverb;
-            this.Adjective = adjective;
+            Title = title;
+            AuthorId = authorId;
+            Story = story;
+            DatePublish = datePublish;
+            Genre = genre;
         }
     }
 }
