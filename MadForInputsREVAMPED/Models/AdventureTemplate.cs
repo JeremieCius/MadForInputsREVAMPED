@@ -46,6 +46,32 @@
 
         public string LocationFour { get; set; }
 
+        public AdventureTemplate(string mainProtagonist, string antagonist, string creatureOne, string creatureTwo, string anythingWord, string weapon, string powerOne, string powerTwo, string powerThree, string weakness, string actionOne, string actionTwo, string actionThree, string actionFour, string actionFive, string adverbOne, string adverbTwo, string adverbThree, string locationOne, string locationTwo, string locationThree, string locationFour)
+        {
+            MainProtagonist = mainProtagonist;
+            Antagonist = antagonist;
+            CreatureOne = creatureOne;
+            CreatureTwo = creatureTwo;
+            AnythingWord = anythingWord;
+            Weapon = weapon;
+            PowerOne = powerOne;
+            PowerTwo = powerTwo;
+            PowerThree = powerThree;
+            Weakness = weakness;
+            ActionOne = actionOne;
+            ActionTwo = actionTwo;
+            ActionThree = actionThree;
+            ActionFour = actionFour;
+            ActionFive = actionFive;
+            AdverbOne = adverbOne;
+            AdverbTwo = adverbTwo;
+            AdverbThree = adverbThree;
+            LocationOne = locationOne;
+            LocationTwo = locationTwo;
+            LocationThree = locationThree;
+            LocationFour = locationFour;
+        }
+
         public override string ToString()
         {
             Random prompt = new Random();
