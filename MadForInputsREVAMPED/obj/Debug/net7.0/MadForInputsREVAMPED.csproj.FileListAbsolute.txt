@@ -83,3 +83,15 @@ C:\Users\jerem\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\De
 C:\Users\jerem\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.pdb
 C:\Users\jerem\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.genruntimeconfig.cache
 C:\Users\jerem\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\ref\MadForInputsREVAMPED.dll
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.csproj.AssemblyReference.cache
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.AssemblyInfoInputs.cache
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.AssemblyInfo.cs
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.csproj.CoreCompileInputs.cache
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.RazorAssemblyInfo.cache
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.RazorAssemblyInfo.cs
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.dll
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\refint\MadForInputsREVAMPED.dll
+C:\Users\Joshua Singvah\Documents\GitHub\MadForInputsREVAMPED\MadForInputsREVAMPED\obj\Debug\net7.0\MadForInputsREVAMPED.pdb
