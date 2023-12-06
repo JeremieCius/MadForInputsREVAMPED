@@ -1,6 +1,8 @@
+using MadForInputsREVAMPED.Areas.Identity.User;
 using MadForInputsREVAMPED.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MadForInputsREVAMPED.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,7 @@ builder.Services.AddDbContext<MadlibContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<MadlibUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<MadlibContext>();
 builder.Services.AddControllersWithViews();
 
