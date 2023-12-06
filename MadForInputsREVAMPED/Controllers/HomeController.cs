@@ -42,7 +42,8 @@ namespace MadForInputsREVAMPED.Controllers
 
         public IActionResult FilterMadlibs()
         {
-            return View("Index", dal.FilterMadlibs());
+            //return View("Index", dal.FilterMadlibs());
+            return null;
         }
 
 
