@@ -33,6 +33,15 @@ namespace MadForInputsREVAMPED.Controllers
             return View("Index", dal.GetMadlibs());
         }
 
+        public IActionResult SearchMadlib()
+        {
+            return View("Index", dal.SearchMadlibs(Request.Form["txtSearch"]));
+        }
+
+        public IActionResult FilterMadlibs()
+        {
+            return View("Index", dal.FilterMadlibs());
+        }
 
 
         [HttpPost]

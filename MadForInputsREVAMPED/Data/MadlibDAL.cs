@@ -64,7 +64,7 @@ namespace MadForInputsREVAMPED.Data
             return madlibs;
         }
 
-        public IEnumerable<Madlib> FilterMadlibs(string? genre, DateTime? latest, DateTime? oldest, string? title)
+        public IEnumerable<Madlib> FilterMadlibs(string? genre, DateTime? date, string? title)
         {
             throw new NotImplementedException();
         }

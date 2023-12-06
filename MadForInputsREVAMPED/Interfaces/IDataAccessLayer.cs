@@ -17,7 +17,7 @@ namespace MadForInputsREVAMPED.Interfaces
 
         IEnumerable<Madlib> GetUserMadlibs(string userId);
 
-        IEnumerable<Madlib> FilterMadlibs(string? genre, DateTime? latest, DateTime? oldest, string? title);
+        IEnumerable<Madlib> FilterMadlibs(string? genre, DateTime? date, string? title);
 
         IEnumerable<Madlib> SearchMadlibs(string search);
 
