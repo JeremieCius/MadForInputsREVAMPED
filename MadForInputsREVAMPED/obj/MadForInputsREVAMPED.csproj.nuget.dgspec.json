@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joshua Singvah\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj": {}
+    "C:\\Users\\jerem\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joshua Singvah\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj": {
+    "C:\\Users\\jerem\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joshua Singvah\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj",
+        "projectUniqueName": "C:\\Users\\jerem\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj",
         "projectName": "MadForInputsREVAMPED",
-        "projectPath": "C:\\Users\\Joshua Singvah\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj",
-        "packagesPath": "C:\\Users\\Joshua Singvah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joshua Singvah\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\obj\\",
+        "projectPath": "C:\\Users\\jerem\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj",
+        "packagesPath": "C:\\Users\\jerem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jerem\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Joshua Singvah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,9 +46,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -55,7 +64,7 @@
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -64,6 +73,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -85,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
