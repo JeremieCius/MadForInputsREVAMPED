@@ -5,6 +5,9 @@ namespace MadForInputsREVAMPED.Models
 {
     public class Madlib
     {
+        [Required]
+        public int Id { get; set; }
+
         [Column(TypeName = "varchar(500)")]
         public string Title { get; set; }
 
@@ -25,13 +28,14 @@ namespace MadForInputsREVAMPED.Models
 
         }
 
-        public Madlib(string title, string authorId, string story, DateTime datePublish, string genre)
+        public Madlib(string title, string authorId, string story, DateTime datePublish, string genre, int id)
         {
             Title = title;
             AuthorId = authorId;
             Story = story;
             DatePublish = datePublish;
             Genre = genre;
+            Id = id;
         }
     }
 }

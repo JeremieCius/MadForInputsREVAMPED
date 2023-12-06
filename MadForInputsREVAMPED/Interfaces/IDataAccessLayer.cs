@@ -7,6 +7,8 @@ namespace MadForInputsREVAMPED.Interfaces
     {
         MadlibUser GetUser(string userId);
 
+        IEnumerable<MadlibUser> GetUsers();
+
         IEnumerable<Madlib> GetMadlibs();
 
         IEnumerable<Madlib> GetUserMadlibs(string userId);
