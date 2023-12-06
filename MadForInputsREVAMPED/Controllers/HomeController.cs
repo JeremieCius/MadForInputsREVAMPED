@@ -32,11 +32,13 @@ namespace MadForInputsREVAMPED.Controllers
             
             return View("Index", dal.GetMadlibs());
         }
+        [HttpPost]
 
         public IActionResult SearchMadlib()
         {
             return View("Index", dal.SearchMadlibs(Request.Form["txtSearch"]));
         }
+        [HttpPost]
 
         public IActionResult FilterMadlibs()
         {
@@ -48,7 +50,7 @@ namespace MadForInputsREVAMPED.Controllers
         public IActionResult DisplayMadlib()
         {
             Madlib madlib = new Madlib();
-            return View(madlib);
+            return View("DisplayMadlib", madlib);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
