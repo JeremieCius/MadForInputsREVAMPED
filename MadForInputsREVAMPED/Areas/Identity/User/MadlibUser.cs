@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity;
 
 namespace MadForInputsREVAMPED.Areas.Identity.User
 {
-    public class MadlibUser : IdentityUser
+    public class MadlibUser : IdentityUser, IUser<string>
     {
         public string? FirstName { get; set; }
 

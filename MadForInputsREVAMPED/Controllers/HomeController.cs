@@ -1,30 +1,44 @@
 ﻿using MadForInputsREVAMPED.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using MadForInputsREVAMPED.Areas.Identity.User;
+using MadForInputsREVAMPED.Data;
+using MadForInputsREVAMPED.Interfaces;
+using Microsoft.AspNet.Identity;
 
 namespace MadForInputsREVAMPED.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly UserManager<MadlibUser> _userManager;
+
+        IDataAccessLayer dal;
+
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IDataAccessLayer indal, MadlibContext inContext, UserManager<MadlibUser> userManager)
         {
             _logger = logger;
+            this._userManager = userManager;
+            this.dal = indal;
+            if (inContext.GetType() == typeof(MadlibDAL))
+            {
+                ((MadlibDAL)dal).db = inContext;
+            }
         }
 
-        public IActionResult Index()
+        public IActionResult DisplayMadlibs()
         {
-            return View();
+            
+            return View("Index", dal.GetMadlibs());
         }
+
 
 
         [HttpPost]
         public IActionResult DisplayMadlib()
         {
-            Madlib madlib = new Madlib(Request.Form["NameBox"], Request.Form["LocationBox"],
-                Request.Form["VerbBox"], Request.Form["AdverbBox"],
-                Request.Form["AdjectiveBox"]);
+            Madlib madlib = new Madlib();
             return View(madlib);
         }
 

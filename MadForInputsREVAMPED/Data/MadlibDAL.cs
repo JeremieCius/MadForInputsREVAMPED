@@ -19,6 +19,27 @@ namespace MadForInputsREVAMPED.Data
             return db.AspNetUsers.FirstOrDefault(user => user.Id == userId);
         }
 
+        public void DeleteMadlib(int? MadlibId)
+        {
+            if (MadlibId > 0)
+            {
+                db.Madlibs.Remove(db.Madlibs.Find(MadlibId));
+                db.SaveChanges();
+            }
+        }
+
+        public void AddMadlib(Madlib madlib)
+        {
+            var newId = GetMadlibs().Count() + 1;
+            while (GetMadlib(newId) != null)
+            {
+                newId += 1;
+            }
+            madlib.Id = newId;
+            db.Madlibs.Add(madlib);
+            db.SaveChanges();
+        }
+
         public IEnumerable<MadlibUser> GetUsers()
         {
             return db.AspNetUsers.ToList();
@@ -48,9 +69,23 @@ namespace MadForInputsREVAMPED.Data
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Madlib> SearchMadlibs(string search)
+        {
+            List<Madlib> foundMadlibs = new List<Madlib>();
+
+            foreach (var madlib in db.Madlibs)
+            {
+                if (madlib.Title.ToUpper().Contains(search.ToUpper()))
+                {
+                    foundMadlibs.Add(madlib);
+                }
+            }
+            return foundMadlibs;
+        }
+
         public Madlib GetMadlib(int? id)
         {
-            throw new NotImplementedException();
+            return db.Madlibs.FirstOrDefault(madlib => madlib.Id == id);
         }
     }
 }

@@ -7,6 +7,10 @@ namespace MadForInputsREVAMPED.Interfaces
     {
         MadlibUser GetUser(string userId);
 
+        void DeleteMadlib(int? MadlibId);
+
+        void AddMadlib(Madlib madlib);
+
         IEnumerable<MadlibUser> GetUsers();
 
         IEnumerable<Madlib> GetMadlibs();
@@ -14,6 +18,8 @@ namespace MadForInputsREVAMPED.Interfaces
         IEnumerable<Madlib> GetUserMadlibs(string userId);
 
         IEnumerable<Madlib> FilterMadlibs(string? genre, DateTime? latest, DateTime? oldest, string? title);
+
+        IEnumerable<Madlib> SearchMadlibs(string search);
 
         Madlib GetMadlib(int? id);
 
