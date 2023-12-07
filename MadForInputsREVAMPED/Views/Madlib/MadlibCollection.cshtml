@@ -4,10 +4,13 @@
 }
 
 <body>
-    <form asp-controller="Madlib" asp-action="SearchMadlib" method="post">
-        <input type="text" id="txtSearch" name="txtSearch" placeholder="Search for a Madlib..."/>
-        <button type="submit" class="btn btn-success">Search</button>
-    </form>
+    <h3 class="display-5 text-center mt-5 mb-3">Read All Available Madlibs</h3>
+    <div class="mt-5">
+        <form asp-controller="Madlib" asp-action="SearchMadlib" class="d-flex" method="post">
+            <input type="text" class="form-control me-sm-2" id="txtSearch" name="txtSearch" placeholder="Search for a Madlib..." />
+            <button type="submit" class="btn btn-success my-2 my-sm-0">Search</button>
+        </form>
+    </div>
 
     @*<form asp-controller="Madlib" asp-action="FilterMadlibs" method="post">*@
         @*<select name="FilterByGenre" id="FilterByGenre">
@@ -22,17 +25,29 @@
         @*<button type="submit" class="btn btn-success">Filter</button>*@
     @*</form>*@
 
-    <button>@Html.ActionLink("Title", "DisplayMadlibs", new { sortOrder = ViewBag.NameSort })</button>
-    <button>@Html.ActionLink("Date Publish", "DisplayMadlibs", new { sortOrder = ViewBag.DateSort })</button>
-    <button>@Html.ActionLink("Genre", "DisplayMadlibs", new { sortOrder = ViewBag.GenreSort })</button>
-    
-    <div class="row">
-        <div id="padding-bot" class="display-4 text-center info mb-5">
+    <div class="d-flex mt-3 mb-3">
+        <div class="d-flex justify-content-center align-content-center">
+            <h4 class="m-3">Sort Madlibs:</h4>
+        </div>
+        <div class="d-flex justify-content-center align-content-center m-2">
+            <button class="btn btn-dark btn-outline-dark btn-lg">@Html.ActionLink("Title", "DisplayMadlibs", new { sortOrder = ViewBag.NameSort })</button>
+        </div>
+        <div class="d-flex justify-content-center align-content-center m-2">
+            <button class="btn btn-dark btn-outline-dark btn-lg">@Html.ActionLink("Date Publish", "DisplayMadlibs", new { sortOrder = ViewBag.DateSort })</button>
+        </div>
+        <div class="d-flex justify-content-center align-content-center m-2">
+            <button class="btn btn-dark btn-outline-dark btn-lg">@Html.ActionLink("Genre", "DisplayMadlibs", new { sortOrder = ViewBag.GenreSort })</button>
+
+        </div>
+    </div>
+    <hr />
+    <div class="row mt-3">
+        <div id="padding-bot" class="display-5 text-center info mt-3 mb-5">
             @Model.Count() Madlib(s) found:
         </div>
         @foreach (Madlib madlib in Model)
         {
-            <div class="col-sm-12 col-md-6 col-lg-4 text-center mb-3">
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center mb-5">
                 @*<div id="padding-bot"class="display-4 text-center info">
                     @Model.Count() Madlib(s) found:
                 </div>*@
@@ -80,7 +95,7 @@
                     <input type="hidden" asp-for="@madlib.DatePublish" />
                     <input type="hidden" asp-for="@madlib.Story" />
                     <input type="hidden" asp-for="@madlib.Genre" />
-                    <button type="submit">Read</button>
+                    <button class="btn btn-light btn-outline-dark btn-lg" type="submit">Read</button>
                 </form>
             </div>
         }
