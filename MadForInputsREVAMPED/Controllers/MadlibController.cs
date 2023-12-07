@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using MadForInputsREVAMPED.Data;
 using System.Security.Claims;
+using Microsoft.Data.SqlClient;
 
 namespace MadForInputsREVAMPED.Controllers
 {
@@ -26,10 +27,29 @@ namespace MadForInputsREVAMPED.Controllers
             }
         }
 
-        public IActionResult DisplayMadlibs()
+        public IActionResult DisplayMadlibs(string sortOrder)
         {
+            ViewBag.NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSort = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewBag.GenreSort = sortOrder == "Genre" ? "genre_desc" : "Genre";
 
-            return View("MadlibCollection", dal.GetMadlibs());
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    return View("MadlibCollection", dal.GetMadlibs().OrderByDescending(Madlib => Madlib.Title));
+                case "Date":
+                    return View("MadlibCollection", dal.GetMadlibs().OrderBy(Madlib => Madlib.DatePublish));
+                case "date_desc":
+                    return View("MadlibCollection", dal.GetMadlibs().OrderByDescending(Madlib => Madlib.DatePublish));
+                case "Genre":
+                    return View("MadlibCollection", dal.GetMadlibs().OrderBy(Madlib => Madlib.Genre));
+                case "genre_desc":
+                    return View("MadlibCollection", dal.GetMadlibs().OrderByDescending(Madlib => Madlib.Genre));
+                default:
+                    return View("MadlibCollection", dal.GetMadlibs().OrderBy(Madlib => Madlib.Title));
+            }
+
+            //return View("MadlibCollection", dal.GetMadlibs());
         }
         [HttpPost]
 
@@ -39,10 +59,28 @@ namespace MadForInputsREVAMPED.Controllers
         }
         [HttpPost]
 
-        public IActionResult FilterMadlibs()
+        public IActionResult FilterMadlibs(string sortOrder)
         {
+            ViewBag.NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSort = sortOrder == "Date" ? "date_desc" : "Date";
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    dal.GetMadlibs().OrderByDescending(g => g.Title);
+                    break;
+                case "Date":
+                    dal.GetMadlibs().OrderBy(g => g.DatePublish);
+                    break;
+                case "date_desc":
+                    dal.GetMadlibs().OrderByDescending(g => g.DatePublish);
+                    break;
+                default:
+                    dal.GetMadlibs().OrderBy(g => g.Title);
+                    break;
+            }
             //return View("Index", dal.FilterMadlibs());
-            return null;
+            return Redirect("~/Madlib/DisplayMadlibs");
         }
 
         public IActionResult CreateMadlibPage(MadLibViewModel viewModel)
