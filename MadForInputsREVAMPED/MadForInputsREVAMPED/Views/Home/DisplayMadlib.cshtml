@@ -1,0 +1,10 @@
+﻿@model Madlib
+@{
+    ViewData["Title"] = @Model.Title;
+}
+<h1>@ViewData["Title"]</h1>
+<div>
+    @Model.Story
+</div>
+
+<div><a asp-controller="Home" asp-action="DisplayMadlibs">Back Home</a></div>

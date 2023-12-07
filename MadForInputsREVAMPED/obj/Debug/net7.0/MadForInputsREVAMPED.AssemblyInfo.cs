@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-MadForInputsREVAMPED-f47e4d3d-328b-4ac8-9e11-3021fa9f1c65")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-MadForInputsREVAMPED-0f41fdd1-6656-4f0d-80c5-adf5b0cb5c1a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MadForInputsREVAMPED")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

@@ -4,7 +4,7 @@ using System.Diagnostics;
 using MadForInputsREVAMPED.Areas.Identity.User;
 using MadForInputsREVAMPED.Data;
 using MadForInputsREVAMPED.Interfaces;
-using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity;
 
 namespace MadForInputsREVAMPED.Controllers
 {
