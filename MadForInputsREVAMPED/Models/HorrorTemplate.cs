@@ -46,17 +46,17 @@
         {
         }
 
-        public HorrorTemplate(string villain, string occupation, string NameOne, string NameTwo, string NameThree,
-            string NameFour, string locationOne, string locationTwo, string locationThree, string adjectiveOne,
+        public HorrorTemplate(string villain, string occupation, string nameOne, string nameTwo, string nameThree,
+            string nameFour, string locationOne, string locationTwo, string locationThree, string adjectiveOne,
             string adjectiveTwo, string adjectiveThree, string verbOne, string verbTwo, string verbThree,
             string verbFour, string adverbOne, string adverbTwo)
         {
             Villain = villain;
             Occupation = occupation;
-            NameOne = NameOne;
-            NameTwo = NameTwo;
-            NameThree = NameThree;
-            NameFour = NameFour;
+            NameOne = nameOne;
+            NameTwo = nameTwo;
+            NameThree = nameThree;
+            NameFour = nameFour;
             LocationOne = locationOne;
             LocationTwo = locationTwo;
             LocationThree = locationThree;
