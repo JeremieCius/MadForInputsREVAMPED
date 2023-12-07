@@ -46,6 +46,8 @@
 
         public string LocationFour { get; set; }
 
+        public AdventureTemplate() {}
+
         public AdventureTemplate(string mainProtagonist, string antagonist, string creatureOne, string creatureTwo, string anythingWord, string weapon, string powerOne, string powerTwo, string powerThree, string weakness, string actionOne, string actionTwo, string actionThree, string actionFour, string actionFive, string adverbOne, string adverbTwo, string adverbThree, string locationOne, string locationTwo, string locationThree, string locationFour)
         {
             MainProtagonist = mainProtagonist;
