@@ -82,7 +82,7 @@
             Random prompt = new Random();
             string story = "";
 
-            switch (prompt.Next(3, 1))
+            switch (prompt.Next(1, 4))
             {
                 case 1:
                     story = $@"

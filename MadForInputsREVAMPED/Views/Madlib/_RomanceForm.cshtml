@@ -1,0 +1,120 @@
+﻿@model MadLibViewModel
+
+<form asp-controller="Madlib" asp-action="GenerateMadlib" asp-for="@Model" method="post">
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.MainProtagonist"></label>
+        <input asp-for="RomanceTemplate.MainProtagonist" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="RomanceTemplate.MainProtagonist" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.NameOne"></label>
+        <input asp-for="RomanceTemplate.NameOne" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="RomanceTemplate.NameOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.NameTwo"></label>
+        <input asp-for="RomanceTemplate.NameTwo" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="RomanceTemplate.NameTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.NameThree"></label>
+        <input asp-for="RomanceTemplate.NameThree" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="RomanceTemplate.NameThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.NameFour"></label>
+        <input asp-for="RomanceTemplate.NameFour" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="RomanceTemplate.NameFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.AdjectiveOne"></label>
+        <input asp-for="RomanceTemplate.AdjectiveOne" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RomanceTemplate.AdjectiveOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.AdjectiveTwo"></label>
+        <input asp-for="RomanceTemplate.AdjectiveTwo" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RomanceTemplate.AdjectiveTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.AdjectiveThree"></label>
+        <input asp-for="RomanceTemplate.AdjectiveThree" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RomanceTemplate.AdjectiveThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.AdjectiveFour"></label>
+        <input asp-for="RomanceTemplate.AdjectiveFour" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RomanceTemplate.AdjectiveFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.VerbOne"></label>
+        <input asp-for="RomanceTemplate.VerbOne" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RomanceTemplate.VerbOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.VerbTwo"></label>
+        <input asp-for="RomanceTemplate.VerbTwo" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RomanceTemplate.VerbTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.VerbThree"></label>
+        <input asp-for="RomanceTemplate.VerbThree" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RomanceTemplate.VerbThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.VerbFour"></label>
+        <input asp-for="RomanceTemplate.VerbFour" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RomanceTemplate.VerbFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.AdverbOne"></label>
+        <input asp-for="RomanceTemplate.AdverbOne" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="RomanceTemplate.AdverbOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.AdverbTwo"></label>
+        <input asp-for="RomanceTemplate.AdverbTwo" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="RomanceTemplate.AdverbTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.LocationOne"></label>
+        <input asp-for="RomanceTemplate.LocationOne" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="RomanceTemplate.LocationOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.LocationTwo"></label>
+        <input asp-for="RomanceTemplate.LocationTwo" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="RomanceTemplate.LocationTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RomanceTemplate.LocationThree"></label>
+        <input asp-for="RomanceTemplate.LocationThree" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="RomanceTemplate.LocationThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="RomanceTemplate.Anything"></label>
+        <input asp-for="RomanceTemplate.Anything" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="RomanceTemplate.Anything" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <button type="submit" class="btn btn-primary" style="width: 150px">Create</button>
+    </div>
+</form>

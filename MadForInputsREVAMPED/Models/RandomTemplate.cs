@@ -79,10 +79,10 @@
 
         public override string ToString()
         {
-            Random prompt = new Random();
+            int prompt = new Random().Next(1,4);
             string story = "";
 
-            switch (prompt.Next(3, 1))
+            switch (prompt)
             {
                 case 1:
                     story = $@"

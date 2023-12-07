@@ -1,4 +1,4 @@
-﻿using MadForInputsREVAMPED.Areas.Identity.User;
+﻿using MadForInputsREVAMPED.Areas.Identity.Data;
 using MadForInputsREVAMPED.Models;
 
 namespace MadForInputsREVAMPED.Interfaces

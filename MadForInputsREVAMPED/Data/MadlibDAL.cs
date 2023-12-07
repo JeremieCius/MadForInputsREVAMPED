@@ -1,6 +1,7 @@
-﻿using MadForInputsREVAMPED.Areas.Identity.User;
+﻿using MadForInputsREVAMPED.Areas.Identity.Data;
 using MadForInputsREVAMPED.Interfaces;
 using MadForInputsREVAMPED.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Threading;
 
 namespace MadForInputsREVAMPED.Data
@@ -30,14 +31,14 @@ namespace MadForInputsREVAMPED.Data
 
         public void AddMadlib(Madlib madlib)
         {
-            var newId = GetMadlibs().Count() + 1;
-            while (GetMadlib(newId) != null)
+            using (var transaction = db.Database.BeginTransaction())
             {
-                newId += 1;
+                db.Madlibs.Add(madlib);
+                db.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Madlibs ON");
+                db.SaveChanges();
+                db.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Madlibs OFF");
+                transaction.Commit();
             }
-            madlib.Id = newId;
-            db.Madlibs.Add(madlib);
-            db.SaveChanges();
         }
 
         public IEnumerable<MadlibUser> GetUsers()

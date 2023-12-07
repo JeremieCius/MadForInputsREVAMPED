@@ -1,0 +1,138 @@
+﻿@model MadLibViewModel
+
+<form asp-controller="Madlib" asp-action="GenerateMadlib" asp-for="@Model" method="post">
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.NameOne"></label>
+        <input asp-for="ComedyTemplate.NameOne" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="ComedyTemplate.NameOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.NameTwo"></label>
+        <input asp-for="ComedyTemplate.NameTwo" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="ComedyTemplate.NameTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.NameThree"></label>
+        <input asp-for="ComedyTemplate.NameThree" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="ComedyTemplate.NameThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.NameFour"></label>
+        <input asp-for="ComedyTemplate.NameFour" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="ComedyTemplate.NameFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.LocationOne"></label>
+        <input asp-for="ComedyTemplate.LocationOne" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="ComedyTemplate.LocationOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.LocationTwo"></label>
+        <input asp-for="ComedyTemplate.LocationTwo" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="ComedyTemplate.LocationTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.LocationThree"></label>
+        <input asp-for="ComedyTemplate.LocationThree" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="ComedyTemplate.LocationThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.LocationFour"></label>
+        <input asp-for="ComedyTemplate.LocationFour" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="ComedyTemplate.LocationFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AdjectiveOne"></label>
+        <input asp-for="ComedyTemplate.AdjectiveOne" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="ComedyTemplate.AdjectiveOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AdjectiveTwo"></label>
+        <input asp-for="ComedyTemplate.AdjectiveTwo" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="ComedyTemplate.AdjectiveTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AdjectiveThree"></label>
+        <input asp-for="ComedyTemplate.AdjectiveThree" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="ComedyTemplate.AdjectiveThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AdjectiveFour"></label>
+        <input asp-for="ComedyTemplate.AdjectiveFour" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="ComedyTemplate.AdjectiveFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.VerbOne"></label>
+        <input asp-for="ComedyTemplate.VerbOne" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="ComedyTemplate.VerbOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.VerbTwo"></label>
+        <input asp-for="ComedyTemplate.VerbTwo" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="ComedyTemplate.VerbTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.VerbThree"></label>
+        <input asp-for="ComedyTemplate.VerbThree" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="ComedyTemplate.VerbThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.VerbFour"></label>
+        <input asp-for="ComedyTemplate.VerbFour" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="ComedyTemplate.VerbFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AdverbOne"></label>
+        <input asp-for="ComedyTemplate.AdverbOne" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="ComedyTemplate.AdverbOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AdverbTwo"></label>
+        <input asp-for="ComedyTemplate.AdverbTwo" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="ComedyTemplate.AdverbTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AnythingOne"></label>
+        <input asp-for="ComedyTemplate.AnythingOne" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="ComedyTemplate.AnythingOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AnythingTwo"></label>
+        <input asp-for="ComedyTemplate.AnythingTwo" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="ComedyTemplate.AnythingTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ComedyTemplate.AnythingThree"></label>
+        <input asp-for="ComedyTemplate.AnythingThree" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="ComedyTemplate.AnythingThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="ComedyTemplate.AnythingFour"></label>
+        <input asp-for="ComedyTemplate.AnythingFour" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="ComedyTemplate.AnythingFour" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <button type="submit" class="btn btn-primary" style="width: 150px">Create</button>
+    </div>
+</form>

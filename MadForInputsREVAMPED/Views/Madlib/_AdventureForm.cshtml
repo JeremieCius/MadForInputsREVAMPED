@@ -1,0 +1,138 @@
+﻿@model MadLibViewModel
+
+<form asp-controller="Madlib" asp-action="GenerateMadlib" asp-for="@Model" method="post">
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.MainProtagonist"></label>
+        <input asp-for="AdventureTemplate.MainProtagonist" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="AdventureTemplate.MainProtagonist" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.Antagonist"></label>
+        <input asp-for="AdventureTemplate.Antagonist" class="form-control" placeholder="Enter a name" />
+        <span asp-validation-for="AdventureTemplate.Antagonist" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.CreatureOne"></label>
+        <input asp-for="AdventureTemplate.CreatureOne" class="form-control" placeholder="Enter an animal/creature" />
+        <span asp-validation-for="AdventureTemplate.CreatureOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.CreatureTwo"></label>
+        <input asp-for="AdventureTemplate.CreatureTwo" class="form-control" placeholder="Enter an animal/creature" />
+        <span asp-validation-for="AdventureTemplate.CreatureTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.AnythingWord"></label>
+        <input asp-for="AdventureTemplate.AnythingWord" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="AdventureTemplate.AnythingWord" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.Weapon"></label>
+        <input asp-for="AdventureTemplate.Weapon" class="form-control" placeholder="Enter a type of weapon" />
+        <span asp-validation-for="AdventureTemplate.Weapon" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.PowerOne"></label>
+        <input asp-for="AdventureTemplate.PowerOne" class="form-control" placeholder="Enter a super power" />
+        <span asp-validation-for="AdventureTemplate.PowerOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.PowerTwo"></label>
+        <input asp-for="AdventureTemplate.PowerTwo" class="form-control" placeholder="Enter a super power" />
+        <span asp-validation-for="AdventureTemplate.PowerTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.PowerThree"></label>
+        <input asp-for="AdventureTemplate.PowerThree" class="form-control" placeholder="Enter a super power" />
+        <span asp-validation-for="AdventureTemplate.PowerThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.Weakness"></label>
+        <input asp-for="AdventureTemplate.Weakness" class="form-control" placeholder="Enter a body part" />
+        <span asp-validation-for="AdventureTemplate.Weakness" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.ActionOne"></label>
+        <input asp-for="AdventureTemplate.ActionOne" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="AdventureTemplate.ActionOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.ActionTwo"></label>
+        <input asp-for="AdventureTemplate.ActionTwo" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="AdventureTemplate.ActionTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.ActionThree"></label>
+        <input asp-for="AdventureTemplate.ActionThree" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="AdventureTemplate.ActionThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.ActionFour"></label>
+        <input asp-for="AdventureTemplate.ActionFour" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="AdventureTemplate.ActionFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.ActionFive"></label>
+        <input asp-for="AdventureTemplate.ActionFive" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="AdventureTemplate.ActionFive" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.AdverbOne"></label>
+        <input asp-for="AdventureTemplate.AdverbOne" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="AdventureTemplate.AdverbOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.AdverbTwo"></label>
+        <input asp-for="AdventureTemplate.AdverbTwo" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="AdventureTemplate.AdverbTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.AdverbThree"></label>
+        <input asp-for="AdventureTemplate.AdverbThree" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="AdventureTemplate.AdverbThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.LocationOne"></label>
+        <input asp-for="AdventureTemplate.LocationOne" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="AdventureTemplate.LocationOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.LocationTwo"></label>
+        <input asp-for="AdventureTemplate.LocationTwo" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="AdventureTemplate.LocationTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AdventureTemplate.LocationThree"></label>
+        <input asp-for="AdventureTemplate.LocationThree" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="AdventureTemplate.LocationThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="AdventureTemplate.LocationFour"></label>
+        <input asp-for="AdventureTemplate.LocationFour" class="form-control" placeholder="Enter a place" />
+        <span asp-validation-for="AdventureTemplate.LocationFour" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <button type="submit" class="btn btn-primary" style="width: 150px">Create</button>
+    </div>
+</form>

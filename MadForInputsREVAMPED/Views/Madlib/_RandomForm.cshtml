@@ -1,0 +1,133 @@
+﻿@model MadLibViewModel
+
+<form asp-controller="Madlib" asp-action="GenerateMadlib" asp-for="@Model" method="post">
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.NounOne"></label>
+        <input asp-for="RandomTemplate.NounOne" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="RandomTemplate.NounOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.NounTwo"></label>
+        <input asp-for="RandomTemplate.NounTwo" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="RandomTemplate.NounTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.NounThree"></label>
+        <input asp-for="RandomTemplate.NounThree" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="RandomTemplate.NounThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.NounFour"></label>
+        <input asp-for="RandomTemplate.NounFour" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="RandomTemplate.NounFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.NounFive"></label>
+        <input asp-for="RandomTemplate.NounFive" class="form-control" placeholder="Enter a noun" />
+        <span asp-validation-for="RandomTemplate.NounFive" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdjectiveOne"></label>
+        <input asp-for="RandomTemplate.AdjectiveOne" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RandomTemplate.AdjectiveOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdjectiveTwo"></label>
+        <input asp-for="RandomTemplate.AdjectiveTwo" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RandomTemplate.AdjectiveTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdjectiveThree"></label>
+        <input asp-for="RandomTemplate.AdjectiveThree" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RandomTemplate.AdjectiveThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdjectiveFour"></label>
+        <input asp-for="RandomTemplate.AdjectiveFour" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RandomTemplate.AdjectiveFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdjectiveFive"></label>
+        <input asp-for="RandomTemplate.AdjectiveFive" class="form-control" placeholder="Enter an adjective" />
+        <span asp-validation-for="RandomTemplate.AdjectiveFive" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.VerbOne"></label>
+        <input asp-for="RandomTemplate.VerbOne" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RandomTemplate.VerbOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.VerbTwo"></label>
+        <input asp-for="RandomTemplate.VerbTwo" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RandomTemplate.VerbTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.VerbThree"></label>
+        <input asp-for="RandomTemplate.VerbThree" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RandomTemplate.VerbThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.VerbFour"></label>
+        <input asp-for="RandomTemplate.VerbFour" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RandomTemplate.VerbFour" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.VerbFive"></label>
+        <input asp-for="RandomTemplate.VerbFive" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RandomTemplate.VerbFive" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.VerbSix"></label>
+        <input asp-for="RandomTemplate.VerbSix" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RandomTemplate.VerbSix" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.VerbSeven"></label>
+        <input asp-for="RandomTemplate.VerbSeven" class="form-control" placeholder="Enter a verb" />
+        <span asp-validation-for="RandomTemplate.VerbSeven" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdverbOne"></label>
+        <input asp-for="RandomTemplate.AdverbOne" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="RandomTemplate.AdverbOne" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdverbTwo"></label>
+        <input asp-for="RandomTemplate.AdverbTwo" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="RandomTemplate.AdverbTwo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="RandomTemplate.AdverbThree"></label>
+        <input asp-for="RandomTemplate.AdverbThree" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="RandomTemplate.AdverbThree" class="text-danger"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="RandomTemplate.AdverbFour"></label>
+        <input asp-for="RandomTemplate.AdverbFour" class="form-control" placeholder="Enter an adverb" />
+        <span asp-validation-for="RandomTemplate.AdverbFour" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-2">
+        <button type="submit" class="btn btn-primary" style="width: 150px">Create</button>
+    </div>
+</form>

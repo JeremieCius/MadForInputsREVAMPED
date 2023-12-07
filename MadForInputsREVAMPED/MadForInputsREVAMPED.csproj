@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-MadForInputsREVAMPED-0f41fdd1-6656-4f0d-80c5-adf5b0cb5c1a</UserSecretsId>
+    <UserSecretsId>aspnet-MadForInputsREVAMPED-620c8dd1-4025-44af-9303-a60af0c29d1e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

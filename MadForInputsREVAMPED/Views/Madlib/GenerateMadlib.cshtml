@@ -1,0 +1,40 @@
+﻿@model Madlib
+@{
+    ViewData["Title"] = @Model.Title;
+}
+<h1>@ViewData["Title"]</h1>
+<div>
+    @Model.Story
+</div>
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            <form method="post" asp-controller="Madlib" asp-action="SaveMadlib" asp-for="@Model">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="Title" />
+                <input type="hidden" asp-for="AuthorId" />
+                <input type="hidden" asp-for="DatePublish" />
+                <input type="hidden" asp-for="Story" />
+                <input type="hidden" asp-for="Genre" />
+                <button type="submit" class="btn-success">Save</button>
+            </form>
+        </div>
+        <div class="col-lg-2">
+            <form method="post" asp-controller="Madlib" asp-action="ExportMadlib" asp-for="@Model">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="Title" />
+                <input type="hidden" asp-for="AuthorId" />
+                <input type="hidden" asp-for="DatePublish" />
+                <input type="hidden" asp-for="Story" />
+                <input type="hidden" asp-for="Genre" />
+                <button type="submit" class="btn-secondary">Export ↓</button>
+            </form>
+        </div>
+        <div class="col col-lg-2">
+            <form method="post" asp-controller="Madlib" asp-action="DisplayMadlibs">
+                <button type="submit" class="btn-primary">Back Home</button>
+            </form>
+        </div>
+    </div>
+</div>

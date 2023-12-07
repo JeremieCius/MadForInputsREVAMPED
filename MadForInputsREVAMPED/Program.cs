@@ -1,10 +1,8 @@
-using MadForInputsREVAMPED.Areas.Identity.User;
-using MadForInputsREVAMPED.Data;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using MadForInputsREVAMPED.Areas.Identity.Data;
 using MadForInputsREVAMPED.Data;
 using MadForInputsREVAMPED.Interfaces;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,28 +15,11 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<MadlibUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<MadlibContext>();
 builder.Services.AddControllersWithViews();
-builder.Services.AddAuthorization();
-builder.Services.AddRazorPages().AddRazorPagesOptions(o =>
-{
-    o.Conventions.ConfigureFilter(new IgnoreAntiforgeryTokenAttribute());
-});
-
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddScoped<IDataAccessLayer, MadlibDAL>();
 
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    // Cookie settings
-    options.Cookie.HttpOnly = true;
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(1000000);
-
-    options.LoginPath = "/Identity/Account/Login";
-    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
-    options.SlidingExpiration = true;
-});
-
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

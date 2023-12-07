@@ -1,0 +1,45 @@
+﻿@model MadLibViewModel
+
+    <div class="border p-3 mt-4">
+        <form>
+            <div class="row pb-2">
+                <h2 class="text-primary">Create MadLib</h2>
+                <hr />
+                <br />
+                <div asp-validation-summary="All" class="text-danger"></div>
+            </div>
+
+            <div class="mb-4">
+                <label>Select a Genre</label>
+                <select id="genreSelector" class="form-select" asp-for="@Model.SelectedGenre" onchange="this.form.submit()">
+                    <option value="0" selected>Random</option>
+                    <option value="1">Adventure</option>
+                    <option value="2">Comedy</option>
+                    <option value="3">Horror</option>
+                    <option value="4">Romance</option>
+                </select>
+            </div>
+        </form>
+        <div class="mb-4">
+            @if (Model.SelectedGenre == 1)
+            {
+                @Html.Partial("_AdventureForm", Model)
+            }
+            else if (Model.SelectedGenre == 2)
+            {
+                @Html.Partial("_ComedyForm", Model)
+            }
+            else if (Model.SelectedGenre == 3)
+            {
+                @Html.Partial("_HorrorForm", Model)
+            }
+            else if (Model.SelectedGenre == 4)
+            {
+                @Html.Partial("_RomanceForm", Model)
+            }
+            else
+            {
+                @Html.Partial("_RandomForm", Model)
+            }
+        </div>
+    </div>
