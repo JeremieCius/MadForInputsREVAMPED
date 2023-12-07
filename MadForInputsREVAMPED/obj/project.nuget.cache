@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ge7F4fWLFaeAf8kUVYwbGNAVqmaeoUKISPqpYCEbsBdl0pdTYGRQsIFNR0M4kFlwep0gMFaX8B+XkU70ze6B8g==",
+  "dgSpecHash": "aWHVbCJn8ZlEY8drrXYOHTnzJgielF5+YHqxtkt2+j4KgExJWMBLwUDwx/9bIJwRGRGT0qB05EHkO+0zf33+mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jerem\\Downloads\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj",
+  "projectFilePath": "C:\\Users\\jerem\\Documents\\GitHub\\MadForInputsREVAMPED\\MadForInputsREVAMPED\\MadForInputsREVAMPED.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jerem\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jerem\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
